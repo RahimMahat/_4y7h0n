@@ -21,7 +21,7 @@ def scan(ip):
 	# answered_list,unanswered_list = scapy.srp(arp_request_broadcast, timeout=1) # srp is func. which will allow us to send and recieve packets with custom ethernet that we create above
 	# after sending srp to the given ip range you'll get couple of list of answered and unanswered packets so we capture that differently
 	answered_list = scapy.srp(arp_request_broadcast, timeout=1 ,verbose=False)[0] # to only get the content of answered packets
-	# print(answered_list.summary())	ff					  # verbose=False will give you less detailed output for pretty printing
+	# print(answered_list.summary())						  # verbose=False will give you less detailed output for pretty printing
 
 	# iii. Parsing the response that we got:
 	# for element in answered_list:
