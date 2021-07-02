@@ -54,4 +54,6 @@ Here we will be intercepting the download requests
 for this ofcourse you'll need to be mitm
 and you'll also need to queue the requests using iptables as we 
 did in DNS spoofer program
+and as you are in the middle of network you'll have to enable ip_forwarding by cmd:
+echo 1 > /pro/sys/net/ipv4/ip_forward
 '''
