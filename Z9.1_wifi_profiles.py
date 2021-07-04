@@ -6,7 +6,8 @@ def send_mail(email,passwd,message):
 	server = smtplib.SMTP("smtp.gmail.com",587)  # wer are creating a smtp server using smtplib
 	# and the server is google's server and googles's server runs on 587 port
 	server.ehlo()
-	server.starttls()  # initiating tls connection
+	server.starttls()  # initiating tls connection 
+	server.ehlo()
 	server.login(email,passwd)  # loging in in our email to send email
 	server.sendmail(email, email,message)  # send email function
 	# from: our email, to: our email , content: message
