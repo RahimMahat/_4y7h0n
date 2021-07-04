@@ -13,6 +13,7 @@ def send_mail(email,passwd,message):
 	server = smtplib.SMTP("smtp.gmail.com",587)
 	server.ehlo()
 	server.starttls() 
+	server.ehlo()
 	server.login(email,passwd)  
 	server.sendmail(email, email,message)  
 	server.quit()
