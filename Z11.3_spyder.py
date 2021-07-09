@@ -17,7 +17,7 @@ def extract_links_from(url):
 
 
 href_links = extract_links_from(target_url)
-# print(href_links)  # as mutilldae is a vulnrable website it won't give you binary html content instead we will have plain text html content
+# print(href_links) 
 
 for link in href_links:
 	link = urlparse.urljoin(target_url, link)  # to join the relative url's with the base url
