@@ -28,7 +28,7 @@ print("[-] Password is not in the given dictionary.")
 
 '''
 basic logic:
-target_url = "http://192.168.111.129/dvwa/login.php"
+target_url = "http://localhost/dvwa/login.php"
 data_dict = {'username':'admin','password':'password','Login':'submit'}
 response = requests.post(target_url, data= data_dict)
 print(response.content)
