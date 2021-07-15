@@ -7,7 +7,7 @@ target_url = "http://localhost/dvwa/login.php"
 data_dict = {'username':'admin','password':'','Login':'submit'}
 # 'username','password','Login' is name of username,password and submit input box in the html form
 
-with open("password.txt","r") as paswds:
+with open("passwords.txt","r") as paswds:
 	for paswd in paswds:
 		pswd = paswd.strip()
 		data_dict["password"] = pswd
