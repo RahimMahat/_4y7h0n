@@ -11,7 +11,7 @@ def request(url):
 
 target_url = "localhost/mutillidae"
 
-with open("filesNdirs-wordlist","r") as wordlist:
+with open("filesNdirs-wordlist.txt","r") as wordlist:
 	for line in wordlist:
 		word = line.strip() 
 		test_url = target_url + "/" + word
