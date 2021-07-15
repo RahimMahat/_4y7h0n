@@ -10,7 +10,7 @@ def request(url):
 		pass
 
 target_url = "google.com"
-with open("small-subdomain-wodlist.txt","r") as wordlist:
+with open("subdomain-wordlist","r") as wordlist:
 	for line in wordlist:
 		word = line.strip()  # to strip the new line character in the wordlist
 		test_url = word + "." + target_url  # eg. mail.google.com
